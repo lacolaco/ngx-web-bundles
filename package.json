@@ -1,0 +1,42 @@
+{
+  "name": "@lacolaco/ngx-web-bundles",
+  "version": "0.0.1",
+  "description": "Angular CLI builder for generate Web Bundle file (.wbn) ",
+  "repository": "https://github.com/lacolaco/ngx-web-bundles",
+  "author": "Suguru Inatomi <suguru.inatomi+github@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "builders": "builders.json",
+  "scripts": {
+    "format": "prettier --write index.ts",
+    "prepublish": "yarn build",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@angular-devkit/architect": "^0.803.18",
+    "@angular-devkit/build-angular": "^0.803.18",
+    "@angular-devkit/core": "^8.3.18",
+    "@angular/cli": "^8.3.18",
+    "@angular/compiler": "^8.2.13",
+    "@angular/compiler-cli": "^8.2.13",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^24.0.23",
+    "@types/mime": "^2.0.1",
+    "@types/node": "^12.12.7",
+    "@types/rimraf": "^2.0.3",
+    "prettier": "^1.19.1",
+    "typescript": "~3.5.0"
+  },
+  "dependencies": {
+    "glob": "^7.1.6",
+    "mime": "^2.4.4",
+    "rimraf": "^3.0.0",
+    "wbn": "^0.0.3"
+  },
+  "peerDependencies": {
+    "@angular/cli": "^8.3.18"
+  }
+}

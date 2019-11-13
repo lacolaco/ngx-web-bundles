@@ -1,0 +1,9 @@
+{
+    "builders": {
+      "generate": {
+        "implementation": "./index",
+        "schema": "./schema.json",
+        "description": "Generates Web Bundle (.wbn) file with browser build output."
+      }
+    }
+  }
