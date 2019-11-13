@@ -11,10 +11,10 @@
       "prefix": "app",
       "architect": {
         "gen-bundle": {
-          "builder": "@lacolaco/ngx-web-bundles:generate:production",
+          "builder": "@lacolaco/ngx-web-bundles:generate",
           "options": {
-            "browserTarget": "testapp:build",
-            "primaryURL": "https://example.com/"
+            "browserTarget": "testapp:build:production",
+            "primaryURL": "https://ngx-web.bundles"
           }
         },
         "build": {
@@ -85,6 +85,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "testapp"
 }

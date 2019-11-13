@@ -11,5 +11,5 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "files": ["index.ts"]
+  "include": ["index.ts", "schematics"]
 }

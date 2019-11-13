@@ -103,7 +103,7 @@
     rxjs "6.4.0"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@8.3.18":
+"@angular-devkit/schematics@8.3.18", "@angular-devkit/schematics@^8.3.18":
   version "8.3.18"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.18.tgz#946eedb52194cb1f29216eaf6942075d12394d11"
   integrity sha512-J9sf/6cSUx2kdXppo/69uZ1gBeM5fcXfnP7MCJCVnsk09QCD9Kr+Xeh8h4WEmLtne7XzI9dcCttHQ5WDNuRulA==

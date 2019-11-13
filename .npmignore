@@ -1,5 +1,5 @@
 node_modules
 testapp
-index.ts
+*.ts
 *.log
 yarn.lock

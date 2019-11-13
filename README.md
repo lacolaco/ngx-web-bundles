@@ -13,13 +13,23 @@ This tool is created for just trying new (experimental) web proposal with Angula
 
 See the `testapp` directory for example.
 
-### Install the builder
+### 1. Install the builder
 
 ```
-$ yarn add -D @lacolaco/ngx-web-bundles
+$ ng add @lacolaco/ngx-web-bundles
 ```
 
-### Add the architect command to your `angular.json`.
+### 2. Run it
+
+Execute the command;
+
+```
+$ ng run <project name>:gen-bundle
+```
+
+## Configuration
+
+After `ng-add`, You can see the architect options in your `angular.json`.
 
 - `options.browserTarget`: Identify target configuration for building app.
 - `options.primaryURL`: Tell the primary URL to the Web Bundle. (used by browser)
@@ -28,19 +38,11 @@ $ yarn add -D @lacolaco/ngx-web-bundles
 ...
       "architect": {
         "gen-bundle": {
-          "builder": "@lacolaco/ngx-web-bundles:generate:production",
+          "builder": "@lacolaco/ngx-web-bundles:generate",
           "options": {
-            "browserTarget": "testapp:build",
-            "primaryURL": "https://example.com/"
+            "browserTarget": "testapp:build:production",
+            "primaryURL": "https://ngx-web.bundles" // <= dummy URL
           }
         },
 ...
-```
-
-### Run it
-
-Execute the command;
-
-```
-$ ng run testapp:gen-bundle
 ```
