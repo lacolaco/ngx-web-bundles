@@ -1,6 +1,6 @@
 {
   "name": "@lacolaco/ngx-web-bundles",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Angular CLI builder for generate Web Bundle file (.wbn) ",
   "repository": "https://github.com/lacolaco/ngx-web-bundles",
   "author": "Suguru Inatomi <suguru.inatomi+github@gmail.com>",
