@@ -58,7 +58,10 @@ async function build(options: Options, context: BuilderContext) {
   rimraf.sync(browserTargetOptions.outputPath);
   context.logger.info(`Building app.`);
   const { outputPath } = await executeBrowserBuilder(
-    browserTargetOptions,
+    {
+      ...browserTargetOptions,
+      baseHref: options.primaryURL, // NOTE: workaround for chrome's bug
+    },
     context
   ).toPromise();
 
