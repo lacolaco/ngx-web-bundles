@@ -30,7 +30,7 @@ export function ngAdd(_options: any): Rule {
       builder: "@lacolaco/ngx-web-bundles:generate",
       options: {
         browserTarget: `${projectName}:build:production`,
-        primaryURL: `https://ngx-web.bundles`
+        primaryURL: `https://ngx-web.bundles/`
       }
     };
 
